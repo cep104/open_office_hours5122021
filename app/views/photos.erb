@@ -1,0 +1,8 @@
+<h1>All Photos</h1>
+
+<% @photos.each do |photo| %>
+
+<h3>Title: <%= photo.title %></h3>
+<img src=<%= photo.img_url %> />
+<h4>by: <%= photo.user.name %></h4>
+<% end %>
